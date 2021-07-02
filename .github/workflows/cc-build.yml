@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: cc- build
 
 # Controls when the workflow will run
 on:
@@ -40,7 +40,6 @@ jobs:
         
 
       # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
+      - name: build
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          bash ./.build
